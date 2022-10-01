@@ -926,7 +926,7 @@ a {
 }
 
 .no-webp .intro {
-  background-image: url("img/main-pictures/01.jpg"); }
+  background-image: url("../img/main-pictures/01.jpg"); }
 
 .intro {
   padding: 96px 0 56px;
@@ -1056,7 +1056,7 @@ a {
 }
 
 .no-webp .decide::before {
-  background-image: url("img/person.png"); }
+  background-image: url("../img/person.png"); }
 
 .decide::before {
   content: "";
@@ -1246,7 +1246,7 @@ a {
 }
 
 .no-webp .admin-services {
-  background-image: url("img/services/bg-service.jpg"); }
+  background-image: url("../img/services/bg-service.jpg"); }
 
 .admin-services {
   background-repeat: no-repeat;
@@ -1294,7 +1294,7 @@ a {
 }
 
 .no-webp .questions {
-  background-image: url("img/do-you-have-questions.jpg"); }
+  background-image: url("../img/do-you-have-questions.jpg"); }
 
 .questions {
   background-repeat: no-repeat;
@@ -1411,7 +1411,7 @@ a {
 }
 
 .no-webp .stages.bg {
-  background-image: url("img/services/bg-service.jpg"); }
+  background-image: url("../img/services/bg-service.jpg"); }
 
 .stages.bg {
   background-repeat: no-repeat;
@@ -1554,7 +1554,7 @@ a {
 }
 
 .no-webp .why {
-  background-image: url("img/bg-what.jpg"); }
+  background-image: url("../img/bg-what.jpg"); }
 
 .why {
   background-repeat: no-repeat;
@@ -1689,7 +1689,7 @@ a {
 */
 
 .no-webp .footer {
-  background-image: url("img/footer-background.jpg"); }
+  background-image: url("../img/footer-background.jpg"); }
 
 .footer {
   background-repeat: no-repeat;
@@ -2002,16 +2002,16 @@ a {
   }
 }
 
-.webp .intro { background-image: url(img/main-pictures/01.webp); }
+.webp .intro { background-image: url(../img/main-pictures/01.webp); }
 
-.webp .decide::before { background-image: url(img/person.webp); }
+.webp .decide::before { background-image: url(../img/person.webp); }
 
-.webp .admin-services { background-image: url(img/services/bg-service.webp); }
+.webp .admin-services { background-image: url(../img/services/bg-service.webp); }
 
-.webp .questions { background-image: url(img/do-you-have-questions.webp); }
+.webp .questions { background-image: url(../img/do-you-have-questions.webp); }
 
-.webp .stages.bg { background-image: url(img/services/bg-service.webp); }
+.webp .stages.bg { background-image: url(../img/services/bg-service.webp); }
 
-.webp .why { background-image: url(img/bg-what.webp); }
+.webp .why { background-image: url(../img/bg-what.webp); }
 
-.webp .footer { background-image: url(img/footer-background.webp); }
+.webp .footer { background-image: url(../img/footer-background.webp); }

@@ -330,9 +330,13 @@ body.locked {
 }
 .menu__phones a {
   font-size: 0.75rem;
-  letter-spacing: -0.02em;
   line-height: 1.1666666667;
 }
+
+.menu__phones a:first-child {
+  letter-spacing: -0.019em;
+}
+
 .menu .btn-group {
   margin-left: 12px;
 }

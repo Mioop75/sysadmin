@@ -12151,8 +12151,12 @@ var Accordion = /*#__PURE__*/function () {
     };
     this.options = Object.assign(defaultOptions, options);
     this.accordion = document.querySelector("[data-accordion=\"".concat(selector, "\"]"));
-    this.control = this.accordion.querySelector(".accordion__control");
-    this.content = this.accordion.querySelector(".accordion__content");
+
+    if (this.accordion) {
+      this.control = this.accordion.querySelector(".accordion__control");
+      this.content = this.accordion.querySelector(".accordion__content");
+    }
+
     this.event();
   }
 
@@ -25328,7 +25332,10 @@ var accordion1 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["defa
 var accordion2 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion2", {});
 var accordion3 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion3", {});
 var accordion4 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion4", {});
-var accordion5 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion5", {}); // Range slides
+var accordion5 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion5", {});
+var accordion6 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion6", {});
+var accordion7 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion7", {});
+var accordion8 = new _modules_js_accordion_js__WEBPACK_IMPORTED_MODULE_3__["default"]("accordion8", {}); // Range slides
 
 var rangeCountUsers = document.getElementById("range-countUsers");
 var rangeCountServers = document.getElementById("range-countServers");
@@ -25336,54 +25343,72 @@ var rangeCpu = document.getElementById("range-cpu");
 var rangeRam = document.getElementById("range-ram");
 var rangeSSD = document.getElementById("range-ssd");
 var rangeReserve = document.getElementById("range-reserve");
-nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeCountUsers, {
-  start: [2],
-  connect: [true, false],
-  range: {
-    'min': 1,
-    "max": 10
-  }
-});
-nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeCountServers, {
-  start: [2],
-  connect: [true, false],
-  range: {
-    'min': 1,
-    "max": 10
-  }
-});
-nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeCpu, {
-  start: [10],
-  connect: [true, false],
-  range: {
-    'min': 1,
-    "max": 50
-  }
-});
-nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeSSD, {
-  start: [50],
-  connect: [true, false],
-  range: {
-    'min': 8,
-    "max": 128
-  }
-});
-nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeRam, {
-  start: [15],
-  connect: [true, false],
-  range: {
-    'min': 8,
-    "max": 128
-  }
-});
-nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeReserve, {
-  start: [200],
-  connect: [true, false],
-  range: {
-    'min': 120,
-    "max": 1000
-  }
-});
+
+if (rangeCountUsers) {
+  nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeCountUsers, {
+    start: [2],
+    connect: [true, false],
+    range: {
+      'min': 1,
+      "max": 10
+    }
+  });
+}
+
+if (rangeCountServers) {
+  nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeCountServers, {
+    start: [2],
+    connect: [true, false],
+    range: {
+      'min': 1,
+      "max": 10
+    }
+  });
+}
+
+if (rangeCpu) {
+  nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeCpu, {
+    start: [10],
+    connect: [true, false],
+    range: {
+      'min': 1,
+      "max": 50
+    }
+  });
+}
+
+if (rangeRam) {
+  nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeRam, {
+    start: [15],
+    connect: [true, false],
+    range: {
+      'min': 8,
+      "max": 128
+    }
+  });
+}
+
+if (rangeSSD) {
+  nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeSSD, {
+    start: [50],
+    connect: [true, false],
+    range: {
+      'min': 8,
+      "max": 128
+    }
+  });
+}
+
+if (rangeReserve) {
+  nouislider__WEBPACK_IMPORTED_MODULE_4__.create(rangeReserve, {
+    start: [200],
+    connect: [true, false],
+    range: {
+      'min': 120,
+      "max": 1000
+    }
+  });
+}
 }();
 /******/ })()
 ;

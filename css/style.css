@@ -3037,7 +3037,7 @@ a {
 ---------Footer-----------
 */
 .footer {
-  background-image: url("/img/footer-background.jpg");
+  background-image: url("../img/footer-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

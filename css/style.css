@@ -1613,6 +1613,7 @@ a {
   font-size: 1.25rem;
   line-height: 1.15;
   padding-left: 27px;
+  white-space: nowrap;
 }
 
 .filter-counter__btns {
@@ -5526,7 +5527,7 @@ a {
 
   .filter-counter__btn {
     position: absolute;
-    top: 10px;
+    top: 8px;
   }
 
   .filter-counter__btn:first-child {

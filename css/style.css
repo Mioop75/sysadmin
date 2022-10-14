@@ -235,6 +235,10 @@ body.locked {
   margin-bottom: 80px;
 }
 
+address {
+  font-style: inherit;
+}
+
 /*
 ---------Header-----------
 */

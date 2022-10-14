@@ -3174,6 +3174,9 @@ a {
 
 .about-page__mainTitle {
   margin: 0 auto;
+}
+
+.about-page__mainTitle:not(:last-child) {
   margin-bottom: 62px;
 }
 
@@ -5905,7 +5908,7 @@ a {
     margin-bottom: 50px;
   }
 
-  .about-page__mainTitle {
+  .about-page__mainTitle:not(:last-child) {
     margin-bottom: 50px;
   }
 
@@ -6781,7 +6784,7 @@ a {
     margin-bottom: 25px;
   }
 
-  .about-page__mainTitle {
+  .about-page__mainTitle:not(:last-child) {
     margin-bottom: 25px;
   }
 
